@@ -1,0 +1,9 @@
+.layout {
+    width: 1300px;
+    height: 768px;
+
+    display: flex;
+    gap: 16px;
+}
+
+.layout-main { flex-grow: 1; }

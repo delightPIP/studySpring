@@ -1,5 +1,6 @@
 package com.delight.studySpring.member.controller;
 
+import com.delight.studySpring.member.dto.MemberDto;
 import com.delight.studySpring.member.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -20,9 +21,13 @@ public class MemberController {
     @GetMapping
     public String list(Model model) {
         model.addAttribute("members", memberService.findMembers());
-        return "members/member-list";
+        return "members/list";
     }
 
-
+    @GetMapping("/add")
+    public String writeForm(Model model){
+        model.addAttribute("memberForm", new MemberForm());
+        return "members/form";
+    }
 
 }

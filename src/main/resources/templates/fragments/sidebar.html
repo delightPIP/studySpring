@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="sidebar">
+    <div class="p-3">
+        <ul class="nav flex-column nav-pills nav-fill">
+            <li class="nav-item p-1">
+                <a class="nav-link active" aria-current="page" href="/members">
+                    <i class="fa-solid fa-user"></i>
+                    고객관리
+                </a>
+            </li>
+            <li class="nav-item p-1">
+                <a class="nav-link" href="/items">
+                    <i class="fa-solid fa-cubes"></i>
+                    제품관리
+                </a>
+            </li>
+            <li class="nav-item p-1">
+                <a class="nav-link" href="/orders">
+                    <i class="fa-solid fa-truck"></i>
+                    주문관리
+                </a>
+            </li>
+
+            <li class="nav-item dropdown p-1">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">마이페이지</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">내 정보수정</a></li>
+                    <li><a class="dropdown-item" href="#">문의하기</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">탈퇴하기</a></li>
+                </ul>
+            </li>
+            <li class="nav-item p-1">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </div>
+
+</div>

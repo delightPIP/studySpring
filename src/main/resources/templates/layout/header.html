@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="header">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <span class="fs-4">관리자페이지</span>
+        </a>
+
+        <ul class="d-inline-flex mt-2 mt-md-0 ms-md-auto nav">
+            <li class="nav-item dropdown me-3 py-2">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                   aria-expanded="false">페이지 이동</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">대시보드</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">관리자페이지</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item me-3 py-2">
+                <a class="nav-link" href="#">로그인</a>
+            </li>
+        </ul>
+    </div>
+</th:block>
+</html>

@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  * Created by delightPIP on 2023/10/20.
  */
 @Data
-public class SimpleOrderDto {
+public class SampleOrderDto {
     private Long orderId;
     private String name; // 주문자
     private LocalDateTime orderDate; // 주문 날짜
@@ -22,7 +22,7 @@ public class SimpleOrderDto {
      * DTO 클래스안에서 엔티티를 파라미터로 받는 건 괜찮다.
      * 결국 외부로 노출만 하지 않는다면 상관없다
      **/
-    public SimpleOrderDto(Order order) {
+    public SampleOrderDto(Order order) {
         this.orderId = order.getId();
         this.name = order.getMember().getName();
         this.orderDate = order.getOrderDate();
